@@ -5,7 +5,6 @@ import Mypage from "./Mypage";
 function App() {
   return (
     <div>
-      Hello
       <Mypage />
     </div>
   );

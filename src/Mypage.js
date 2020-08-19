@@ -4,7 +4,7 @@ import styles from "./mypage.css";
 
 const Mypage = () => {
   return (
-    <Grid container>
+    <Grid container className="container">
       <Grid item className="blank" xs={2}>
         sgdgdgg
       </Grid>
@@ -24,19 +24,28 @@ const Mypage = () => {
             </ul>
           </Grid>
           <Grid item className="content" xs={10}>
-            오른쪽 내용
             <Grid container>
               <Grid item xs={6} className="profile">
-                김성수님 안녕하세요
+                <Grid container>
+                  <Grid item xs={3} justifyContent="center" alignItems="center">
+                    사진
+                  </Grid>
+                  <Grid item xs={9}>
+                    <p justifyContent="center">김성수님 안녕하세요. </p>
+                    <p>누적 구매 금액: 0원</p>
+                  </Grid>
+                </Grid>
               </Grid>
-              <Grid item xs={3} className="point">
-                포인트
+              <Grid item xs={3}>
+                <p justifyContent="center">포인트</p>
+                <p justifyContent="center">2,000</p>
               </Grid>
-              <Grid item xs={3} className="coupon">
-                쿠폰
+              <Grid item xs={3}>
+                <p justifyContent="center">쿠폰</p>
+                <p justifyContent="center">0</p>
               </Grid>
             </Grid>
-            <Grid>주문내역이 없습니다.</Grid>
+            <Grid justifyContent="center">주문내역이 없습니다.</Grid>
           </Grid>
         </Grid>
       </Grid>

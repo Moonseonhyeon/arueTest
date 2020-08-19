@@ -1,9 +1,16 @@
+* {
+  border: 0dp;
+  margin: 0dp;
+}
 .blank {
   background-color: aquamarine;
 }
 .list li {
   list-style-type: none;
 }
-.point,
-.coupon {
+.profile {
+  display: inline;
+}
+.container {
+  margin: 5%;
 }
