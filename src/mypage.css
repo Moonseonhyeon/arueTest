@@ -1,0 +1,9 @@
+.blank {
+  background-color: aquamarine;
+}
+.list li {
+  list-style-type: none;
+}
+.point,
+.coupon {
+}
