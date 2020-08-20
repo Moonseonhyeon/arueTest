@@ -26,12 +26,12 @@ const Mypage = () => {
             <Grid container>
               <Grid item xs={5} className="profile">
                 <Grid container>
-                  <Grid item xs={3} justifyContent="center" alignItems="center">
+                  <Grid item xs={3}>
                     사진
                   </Grid>
                   <Grid item xs={9}>
-                    <p justifyContent="center">김성수님 안녕하세요. </p>
-                    <p>누적 구매 금액: 0원</p>
+                    <p className="member">김성수님 안녕하세요. </p>
+                    <p className="fontsmall">누적 구매 금액: 0원</p>
                   </Grid>
                 </Grid>
               </Grid>
@@ -44,7 +44,7 @@ const Mypage = () => {
                   alignItems="center"
                 >
                   <Grid item xs={12}>
-                    <p>포인트</p>
+                    <p className="fontsmall">포인트</p>
                     <p className="bold">2,000</p>
                   </Grid>
                 </Grid>
@@ -58,7 +58,7 @@ const Mypage = () => {
                   alignItems="center"
                 >
                   <Grid item xs={12}>
-                    <p>쿠폰</p>
+                    <p className="fontsmall">쿠폰</p>
                     <p className="bold">0</p>
                   </Grid>
                 </Grid>
