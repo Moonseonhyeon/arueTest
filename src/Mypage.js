@@ -1,13 +1,12 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
+import CardTable from "./CartTable";
 import styles from "./mypage.css";
 
 const Mypage = () => {
   return (
-    <Grid container className="container">
-      <Grid item className="blank" xs={2}>
-        sgdgdgg
-      </Grid>
+    <Grid container className="box">
+      <Grid item xs={2}></Grid>
 
       <Grid item className="main" xs={8}>
         <Grid container>
@@ -25,7 +24,7 @@ const Mypage = () => {
           </Grid>
           <Grid item className="content" xs={10}>
             <Grid container>
-              <Grid item xs={6} className="profile">
+              <Grid item xs={5} className="profile">
                 <Grid container>
                   <Grid item xs={3} justifyContent="center" alignItems="center">
                     사진
@@ -36,23 +35,45 @@ const Mypage = () => {
                   </Grid>
                 </Grid>
               </Grid>
+              <div className="line"></div>
               <Grid item xs={3}>
-                <p justifyContent="center">포인트</p>
-                <p justifyContent="center">2,000</p>
+                <Grid
+                  container
+                  direction="column"
+                  justify="center"
+                  alignItems="center"
+                >
+                  <Grid item xs={12}>
+                    <p>포인트</p>
+                    <p className="bold">2,000</p>
+                  </Grid>
+                </Grid>
               </Grid>
+              <div className="line"></div>
               <Grid item xs={3}>
-                <p justifyContent="center">쿠폰</p>
-                <p justifyContent="center">0</p>
+                <Grid
+                  container
+                  direction="column"
+                  justify="center"
+                  alignItems="center"
+                >
+                  <Grid item xs={12}>
+                    <p>쿠폰</p>
+                    <p className="bold">0</p>
+                  </Grid>
+                </Grid>
               </Grid>
             </Grid>
-            <Grid justifyContent="center">주문내역이 없습니다.</Grid>
+            <Grid container className="boxcardtable">
+              <Grid item>
+                <CardTable />
+              </Grid>
+            </Grid>
           </Grid>
         </Grid>
       </Grid>
 
-      <Grid item className="blank" xs={2}>
-        514 63
-      </Grid>
+      <Grid item xs={2}></Grid>
     </Grid>
   );
 };
