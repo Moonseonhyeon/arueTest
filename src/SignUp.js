@@ -76,6 +76,17 @@ export default function SignIn() {
             margin="normal"
             required
             fullWidth
+            id="username"
+            label="username"
+            name="username"
+            autoComplete="username"
+            autoFocus
+          />
+          <TextField
+            variant="outlined"
+            margin="normal"
+            required
+            fullWidth
             name="password"
             label="Password"
             type="password"
@@ -102,17 +113,6 @@ export default function SignIn() {
             label="gender"
             name="gender"
             autoComplete="gender"
-            autoFocus
-          />
-          <TextField
-            variant="outlined"
-            margin="normal"
-            required
-            fullWidth
-            id="phone"
-            label="phone"
-            name="phone"
-            autoComplete="phone"
             autoFocus
           />
           <TextField
